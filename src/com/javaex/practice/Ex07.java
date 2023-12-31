@@ -39,10 +39,21 @@ public class Ex07 {
 		
 		
 		for(int i=0; i<wonArray.length; i++) {
-			allArray[i] = money/wonArray[i];
-			System.out.println(allArray[i]);
+			allArray[i] = money / wonArray[i]; 
+						  money %= wonArray[i];
 		}
 
+		System.out.println("50000원:"+ allArray[0] + "개");
+		System.out.println("10000원:"+ allArray[1] + "개");
+		System.out.println("5000원:"+ allArray[2] + "개");
+		System.out.println("1000원:"+ allArray[3] + "개");
+		System.out.println("500원:"+ allArray[4] + "개");
+		System.out.println("100원:"+ allArray[5] + "개");
+		System.out.println("50원:"+ allArray[6] + "개");
+		System.out.println("10원:"+ allArray[7] + "개");
+		System.out.println("5원:"+ allArray[8] + "개");
+		System.out.println("1원:"+ allArray[9] + "개");
+		
 		
 		
 	}
