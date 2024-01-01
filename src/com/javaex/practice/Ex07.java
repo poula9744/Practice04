@@ -55,7 +55,7 @@ public class Ex07 {
 		System.out.println("1원:"+ allArray[9] + "개");
 		
 		
-		
+		sc.close();
 	}
 
 }
