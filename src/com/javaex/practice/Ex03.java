@@ -23,7 +23,7 @@ public class Ex03 {
    intA[1] = 6
    intA[2] = 9
    
-   intB에 intA를 복사 == 같은 메모리 공간 사용
+   intB에 intA를 주소값 복사 == 같은 메모리 공간 사용
    
    intB[0] = 3
    intB[1] = 6

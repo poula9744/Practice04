@@ -8,14 +8,20 @@ public class Ex05 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		double[] num = new double[5];
-		num[0] = sc.nextDouble();
-		num[1] = sc.nextDouble();
-		num[2] = sc.nextDouble();
-		num[3] = sc.nextDouble();
-		num[4] = sc.nextDouble();
+		double[] numArray = new double[5];
+		int num;
+		double sum = 0;
+		double average;
 		
-		double average = (num[0] + num[1] + num[2] + num[3] + num[4])/5;
+		for(int i=0; i<numArray.length; i++) {
+			num = sc.nextInt();
+			numArray[i] = num;
+		}
+		
+		for (int i=0; i<numArray.length; i++) {
+			sum = sum + numArray[i];
+		}
+		average = sum/numArray.length;
 		
 		System.out.println("평균은 "+ average + " 입니다.");
 		

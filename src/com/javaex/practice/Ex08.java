@@ -21,9 +21,15 @@ public class Ex08 {
 		}
 		
 		//출력
-		System.out.print(lottoNoArray[0]+ "  " + lottoNoArray[1]+ "  " + lottoNoArray[2]+ "  " 
-					     + lottoNoArray[3]+ "  "+ lottoNoArray[4]+ "  " + lottoNoArray[5]);
-		
+		for(int j=0; j<lottoNoArray.length; j++) {
+			System.out.println(lottoNoArray[j] + " ");
+		}
 	}
-
 }
+
+//*중복검사 로직은 1개가 아님 --> 다양하게 연구해 볼것
+
+// 중복검사
+// i 는 현재 입력된 방번호 <--중복인지 검사해야됨
+// j 비교대상 [0]부터 순서대로 검사해서 i 이전방까지 검사
+// 비교해서 같은 값 방이 나오면 뒤쪽은 검사하지 않음

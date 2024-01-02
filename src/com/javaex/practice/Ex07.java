@@ -19,25 +19,23 @@ public class Ex07 {
 		wonArray[9] = 1;
 		
 		
-		int[] allArray = new int[10];
-		allArray[0] = 0;
-		allArray[1] = 0;
-		allArray[2] = 0;
-		allArray[3] = 0;
-		allArray[4] = 0;
-		allArray[5] = 0;
-		allArray[6] = 0;
-		allArray[7] = 0;
-		allArray[8] = 0;
-		allArray[9] = 0;
 		
-		
+
 		//입력
 		Scanner sc = new Scanner(System.in);
 		System.out.print("금액: ");
 		int money = sc.nextInt();
 		
+		for(int i=0; i<wonArray.length; i++) {
+			int won = wonArray[i];
+			int count = money/won;
+			money = money - (count*won);
+			System.out.println(won + "원:" + count + "개");
+		}
 		
+		
+/*		
+		int[] allArray = new int[10];
 		for(int i=0; i<wonArray.length; i++) {
 			allArray[i] = money / wonArray[i]; 
 						  money %= wonArray[i];
@@ -53,7 +51,7 @@ public class Ex07 {
 		System.out.println("10원:"+ allArray[7] + "개");
 		System.out.println("5원:"+ allArray[8] + "개");
 		System.out.println("1원:"+ allArray[9] + "개");
-		
+*/		
 		
 		sc.close();
 	}
